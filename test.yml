@@ -1,21 +1,22 @@
 ---
-tasks:
-- name: get system information
+- hosts: all
+  tasks:
+  - name: get system information
     ansible.netcommon.cli_command:
       command: show system information
     register: output1
 
-- name: file dir (classic)
+  - name: file dir (classic)
     ansible.netcommon.cli_command:
       command: file dir
     register: output2
 
-- name: show version
+  - name: show version
     ansible.netcommon.cli_command:
       command: show version
     register: output3
 
-- name: reboot node (abort)
+  - name: reboot node (abort)
     ansible.netcommon.cli_command:
       command: admin reboot
       prompt:
@@ -24,7 +25,7 @@ tasks:
         - 'n'
     register: output4
 
-- name: display output
+  - name: display output
     debug:
       msg: |
         {{output1.stdout}}
