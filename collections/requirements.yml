@@ -1,3 +1,4 @@
 ---
 collections:
   - nokia.sros
+  - ansible.netcommon
