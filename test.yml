@@ -19,22 +19,22 @@
 
   tasks:
   - name: get system information
-    cli_command:
+    ansible.netcommon.cli_command:
       command: show system information
     register: output1
 
   - name: file dir (classic)
-    cli_command:
+    ansible.netcommon.cli_command:
       command: file dir
     register: output2
 
   - name: show version
-    cli_command:
+    ansible.netcommon.cli_command:
       command: show version
     register: output3
 
   - name: reboot node (abort)
-    cli_command:
+    ansible.netcommon.cli_command:
       command: admin reboot
       prompt:
         - "Are you sure you want to reboot (y/n)?"
