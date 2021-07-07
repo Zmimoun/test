@@ -18,22 +18,22 @@
 
   tasks:
   - name: get system information
-    sros_command:
+    cli_command:
       command: show system information
     register: output1
 
   - name: file dir (classic)
-    sros_command:
+    cli_command:
       command: file dir
     register: output2
 
   - name: show version
-    sros_command:
+    cli_command:
       command: show version
     register: output3
 
   - name: reboot node (abort)
-    sros_command:
+    cli_command:
       command: admin reboot
       prompt:
         - "Are you sure you want to reboot (y/n)?"
