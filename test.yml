@@ -18,7 +18,7 @@
 
   tasks:
   - name: get system information
-    cli_command:
+    sros_command:
       command: show system information
     register: output1
 
