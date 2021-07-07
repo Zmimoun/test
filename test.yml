@@ -4,12 +4,12 @@
     - ansible_network_os: nokia.sros.classic
     - ansible_host_key_auto_add: yes
     - ansible_host_key_checking: False
-#  vars_prompt:
-#    - name: ansible_user
-#      prompt: "Username"
-#      private: no
-#    - name: ansible_password
-#      prompt: "Password"
+  vars_prompt:
+    - name: ansible_user
+      prompt: "Username"
+      private: no
+    - name: ansible_password
+      prompt: "Password"
   connection: network_cli
   gather_facts: No
 
