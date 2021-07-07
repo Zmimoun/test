@@ -15,6 +15,7 @@
 
   collections:
   - nokia.sros
+  - ansible.netcommon
 
   tasks:
   - name: get system information
