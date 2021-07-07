@@ -13,8 +13,8 @@
     - connection: network_cli
     - gather_facts: No
 
-#  collections:
-#  - nokia.sros
+  collections:
+  - nokia.sros
 
   tasks:
   - name: get system information
