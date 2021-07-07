@@ -7,11 +7,7 @@
    
   connection: network_cli
   gather_facts: false
-  
-  collections:
-  - nokia.sros
-  - ansible.netcommon
-  
+
   tasks:
   - name: get system information
     ansible.netcommon.cli_command:
