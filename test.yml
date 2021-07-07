@@ -1,12 +1,12 @@
 ---
 - hosts: all
- vars:
-  - ansible_network_os: nokia.sros.light
-  - ansible_host_key_auto_add: true
-  - ansible_host_key_checking: false
- connection: network_cli
- gather_facts: false
- collections:
+  vars:
+   - ansible_network_os: nokia.sros.light
+   - ansible_host_key_auto_add: true
+   - ansible_host_key_checking: false
+  connection: network_cli
+  gather_facts: false
+  collections:
   - nokia.sros
   - ansible.netcommon
   tasks:
