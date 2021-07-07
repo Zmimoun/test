@@ -1,0 +1,18 @@
+---
+- hosts: all
+  connection: network_cli
+  gather_facts: No
+
+  collections:
+  - nokia.sros
+
+  tasks:
+  - name: get device info
+    device_info:
+    register: device_info
+
+  - name: display device info
+    debug:
+      msg: |
+        {{device_info.output}}
+...
