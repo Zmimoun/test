@@ -10,8 +10,8 @@
 #      private: no
 #    - name: ansible_password
 #      prompt: "Password"
-    - connection: network_cli
-    - gather_facts: No
+    connection: network_cli
+    gather_facts: No
 
   collections:
   - nokia.sros
