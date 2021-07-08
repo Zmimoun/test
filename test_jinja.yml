@@ -30,5 +30,5 @@
   - name: do some config
     cli_config:
       config: |
-        "{{ lookup('template', 'add_address.j2') }}"
+        {{ lookup('template', 'add_address.j2') }}
 ...
