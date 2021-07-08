@@ -21,6 +21,7 @@
     template:
       src: add_address.j2
       dest: "{{ routers.router_name }}.txt"
+     delegate_to: localhost
       
   - name: print
     debug:
