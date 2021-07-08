@@ -1,5 +1,5 @@
-- vars
-   routers:
+---
+routers:
      router_name: N1
      int: to4
      port: 1/1/4
