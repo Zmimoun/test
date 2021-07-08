@@ -20,9 +20,8 @@
   - name: generate config
     template:
       src: add_address.j2
-      dest: "/home/osboxes/{{ routers.router_name }}.txt"
-     delegate_to: localhost
-      
+      dest: "/runner/project/{{ routers.router_name }}.txt"
+
   - name: print
     debug:
       msg: |
