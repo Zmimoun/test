@@ -20,10 +20,15 @@
   - name: generate config
     template:
       src: add_address.j2
-      dest: "config/{{ routers.router_name }}.txt"
+      dest: "./config/{{ routers.router_name }}.txt"
 
   - name: do some config
     cli_config:
       config: |
+        "{{ lookup('template', 'add_address.j2') }}"
+    
+  - name: do some config
+    debug:
+      msg: |
         "{{ lookup('template', 'add_address.j2') }}"
 ...
