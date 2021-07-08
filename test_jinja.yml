@@ -4,11 +4,6 @@
     - ansible_network_os: nokia.sros.light
     - ansible_host_key_auto_add: yes
     - ansible_host_key_checking: False
-    - routers:
-         router_name: N1
-         int: "to4"
-         port: 1/1/4
-         add : 4.4.4.4/24
 
   connection: network_cli
   gather_facts: No
@@ -25,7 +20,7 @@
   - name: print
     debug:
       msg: |
-        "{{ lookup('template', 'add_address.j2') }}"
+        {{ lookup('template', 'add_address.j2') }}
         
   - name: do some config
     cli_config:
