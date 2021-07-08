@@ -1,7 +1,7 @@
 configure router 
   interface {{ routers.int }}
-    port {{ routers.port }}
-    address {{ routers.add }}
+    port {{ routers.int.port }}
+    address {{ routers.int.add }}
     exit all
 admin save
  
