@@ -20,7 +20,7 @@
   - name: generate config
     template:
       src: add_address.j2
-      dest: "/home/osboxes/config/{{ routers.router_name }}.txt"
+      dest: "{{ routers.router_name }}.txt"
       
   - name: print
     debug:
