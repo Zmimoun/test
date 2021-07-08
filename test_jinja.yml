@@ -6,7 +6,7 @@
     - ansible_host_key_checking: False
     - routers:
          router_name: N1
-         int: to4
+         int: "to4"
          port: 1/1/4
          add : 4.4.4.4/24
 
