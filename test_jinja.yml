@@ -20,7 +20,7 @@
   - name: generate config
     template:
       src: add_address.j2
-      dest: "/runner/project/{{ routers.router_name }}.txt"
+      dest: "/runner/project/config/{{ routers.router_name }}.txt"
 
   - name: print
     debug:
