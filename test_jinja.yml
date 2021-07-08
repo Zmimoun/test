@@ -12,10 +12,10 @@
   - nokia.sros
 
   tasks:
-  - name: generate config
-    template:
-      src: add_address.j2
-      dest: "/runner/project/config/{{ routers.router_name }}.txt"
+#  - name: generate config
+#    template:
+#      src: add_address.j2
+#      dest: "/runner/project/config/{{ routers.router_name }}.txt"
 
   - name: print
     debug:
