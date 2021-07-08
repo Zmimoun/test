@@ -1,5 +1,5 @@
 ---
 routers:
-       -int: to4
+        int: to4
         port: 1/1/4
         add : 4.4.4.7/24
