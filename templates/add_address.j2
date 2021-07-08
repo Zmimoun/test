@@ -3,5 +3,8 @@ configure router
     port {{ routers.port }}
     address {{ routers.add }}
     exit all
+
+ configure port {{ routers.port }}
+    no shutdown
+    exit all
 admin save
- 
