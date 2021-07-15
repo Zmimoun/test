@@ -1,5 +1,10 @@
----
-routers:
-        int: to4
-        port: 1/1/4
-        add : 4.4.4.7/24
+--- 
+routers: 
+  - 
+    add: 4.4.4.7/24
+    int: to4
+    port: 1/1/4
+  - 
+    add: 5.5.5.7/24
+    int: to5
+    port: 1/1/5
