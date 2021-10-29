@@ -10,7 +10,7 @@
 
   tasks:
   - name: get system information
-    ansible.netcommon.cli_command:
+    cli_command:
       command: show system information
     register: output1
 
