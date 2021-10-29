@@ -15,7 +15,7 @@
   tasks:
   - name: get system information
     sros_command:
-      command: show system information
+      commands: show system information
     register: output1
 
   - name: display output
